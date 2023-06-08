@@ -11,6 +11,8 @@ public class MinusCalculatorTest {
 
     @BeforeEach
     public void setUp() {
+        System.out.println("setUp 동작 확인...");
+
         minusCalc = new MinusCaculator();
     }
 
