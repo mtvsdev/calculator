@@ -1,6 +1,10 @@
 package com.trues.calculator.model;
 
 public class Application {
+
+    DivideCalc divideCalc = new DivideCalc();
+
+
     public int calc(int num1, String op, int num2){
         char c = op.charAt(0);
         switch (c){
@@ -14,7 +18,7 @@ public class Application {
 
                 break;
             case '/':
-
+                divideCalc.divideTwoNumbers(num1, num2);
                 break;
             case '%':
 
